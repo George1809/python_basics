@@ -8,6 +8,14 @@ print(un_sir.lower()) # afisam totul cu litere mici
 print(un_sir.upper()) # afisam totul cu litere mari
 print(un_sir.startswith("U")) # verificam daca un string incepe cu un anumit caracter
 print(un_sir.endswith("e")) # verificam daca un string se termina cu un anumit caracter
+print(un_sir.strip(" ")) # strip() elimina spatii sau caractere doar la inceput si de la final de sir
+print(un_sir.strip("Un")) # elimina de la final si inceput caracterele gasite
+print(un_sir.replace("  ","")) # inclocuieste spatii cu ceva ce am pus, fara spatii de exemplu
+print(un_sir.replace("U","u")) # inclocuieste spatii cu ceva ce am pus, fara spatii de exemplu
+print(un_sir.split(" ")) # se face split la un string si se inlocuieste delimitatorul selectat si se fomreaza o lista. 
+sir_fara_spatii_suplimentare = un_sir.replace("  ","") # eliminam spatiile suplimentare din text si cu split de mai jos afisam o lista curata
+print(sir_fara_spatii_suplimentare.split(" ")) # se face split la un string fara spatii in plus
+print(".".join(un_sir)) # introducere caracter/semn intre toate caracterele din string. 
 
 '''
 Exercise 1 - Strings
@@ -25,3 +33,4 @@ Finally, if you give up on this exercise and decide to move on, then click the C
 '''
 
 my_string = "In 2010, someone paid 10k Bitcoin for two pizzas."
+
