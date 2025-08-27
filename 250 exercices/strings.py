@@ -17,20 +17,31 @@ sir_fara_spatii_suplimentare = un_sir.replace("  ","") # eliminam spatiile supli
 print(sir_fara_spatii_suplimentare.split(" ")) # se face split la un string fara spatii in plus
 print(".".join(un_sir)) # introducere caracter/semn intre toate caracterele din string. 
 
-'''
-Exercise 1 - Strings
-Given the code below, insert the correct negative index on line 3 in order to get the last character in the string.
+un_sir1 = "testtex1t"
+print(un_sir1.capitalize()) # capitalizare prima litera din string
+print(un_sir.lstrip() + " test") # elimina toate spatiile de la inceput de string
+print(un_sir.rstrip() + " test") # elimina toate spatiile de la final de string
+print(un_sir.title()) # capitalizeaza sau face ca toate cuvintele dinstr-un string sa inceapa cu litera mare
+print(un_sir1.isalnum()) # returneaza True daca toate caracterele din string sunt alfanumerice
+print(un_sir1.isalpha()) # returneaza True daca toate caracterele sunt doar litere (fara cifre, fara spatii)
+print (un_sir1.isdigit(), un_sir1.islower(), un_sir.isnumeric(),un_sir.isspace(),un_sir.istitle(),un_sir.isupper())
+# doar digit, True daca toate literele din string sunt cu litere mici, doar caractere numerice, doar spatii, daca toate cuvintele sunt titlecaseed, True daca toate literele din string sunt majuscule
 
+print(un_sir + " " + un_sir1) # concatenare text cu +
+print("a" in un_sir) # verificare daca un caracter este intr-un string
+print("x" not in un_sir) # verificare ca un caracter nu este intr-un string
+print("Cisco model: %s, %d WAN slots, IOS %f" % ("2600XM", 2, 12.4)) # model vechi de formatare cu %: %s e string si %d este integer si %f este float -> "un text cu %s si %d" % (valoare1, valoare2)
+print("Cisco model: %s, %d WAN slots, IOS %.f" % ("2600XM", 2, 12.4))
+print("Cisco model: %s, %d WAN slots, IOS %.1f" % ("2600XM", 2, 12.4))
+print("Cisco model: %s, %d WAN slots, IOS %.2f" % ("2600XM", 2, 12.4))
+print("Cisco model: {}, {} WAN slots, IOS {}".format("2600XM", 2, 12.4)) # alt tip de format
+print("Cisco model: {0}, {1} WAN slots, IOS {2}".format("2600XM", 2, 12.4)) # la fel, alt timp de format si printare string
 
+# string slicing (important!)
+print(" ")
+un_sir2 = "O E2 10.110.8.9 [160/5] via 10.119.254.6, 0:01:00, Ethernet2"
 
-How to solve a coding exercise:
-
-Write your solution in the field below and then click on the Check Solution button.
-
-If the solution you provide is incorrect, then try to understand the error message that appears on the right side of the screen, re-write your solution and press the Check Solution button again.
-
-Finally, if you give up on this exercise and decide to move on, then click the Continue button.
-'''
-
-my_string = "In 2010, someone paid 10k Bitcoin for two pizzas."
-
+print(un_sir2[5:14]) # slice starting ar index 5 up to, but not including, index 14
+print(un_sir2[5]) # exact index 5
+print(un_sir2[5:]) # arata tot textul pronind de la index 5
+print(un_sir2[:14]) # arata tot textul pana la index 14 dar nu afiseaza si index 14
