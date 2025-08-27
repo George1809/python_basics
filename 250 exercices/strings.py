@@ -41,7 +41,17 @@ print("Cisco model: {0}, {1} WAN slots, IOS {2}".format("2600XM", 2, 12.4)) # la
 print(" ")
 un_sir2 = "O E2 10.110.8.9 [160/5] via 10.119.254.6, 0:01:00, Ethernet2"
 
+print(un_sir2[:]) # afisare string intreg, ca si cum ar fi un print normal, dar asta mai util pt liste
 print(un_sir2[5:14]) # slice starting ar index 5 up to, but not including, index 14
 print(un_sir2[5]) # exact index 5
 print(un_sir2[5:]) # arata tot textul pronind de la index 5
 print(un_sir2[:14]) # arata tot textul pana la index 14 dar nu afiseaza si index 14
+print(un_sir2[-1]) # afisare incepand de la final de string, ultimul caracter din string aici
+print(un_sir2[-2]) # aici penultimul caracter din string
+print(un_sir2[-9:-1]) # aici de la caracterul -9 afisat invers, pana la caracter -1 de la coada, dar in ordinea ok, asa cum e cuvantul si exclus ultimul
+print(un_sir2[-1:-9:-3]) # aici citire invers din 1 in 1, din 2 in 2, ca si continuare: adica start, stop, step, exclus ultimul
+print(un_sir2[-2:-10:-1]) # aici citire invers din 1 in 1: adica start, stop, step
+print(un_sir2[-5:]) # returns the lst 5 characters in the string
+print(un_sir2[:-5]) # returns the strings withount last 5 characters
+print(un_sir2[::-2]) # step, the middle :, skips every second character of the string
+print(un_sir2[::-1]) # returns string in reverse order
