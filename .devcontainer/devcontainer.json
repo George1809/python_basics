@@ -1,0 +1,29 @@
+{
+  "name": "Python Dev (Docker)",
+  "image": "python:3.12-slim",
+
+  "workspaceFolder": "/workspace",
+  "mounts": [
+    "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached"
+  ],
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance"
+      ]
+    }
+  },
+
+  "postCreateCommand": "python -V && pip list",
+
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "username": "vscode"
+    }
+  },
+  "remoteUser": "vscode",
+  "updateRemoteUserUID": true
+}
+
