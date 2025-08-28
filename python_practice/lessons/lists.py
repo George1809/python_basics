@@ -7,10 +7,13 @@ print(list1[0])
 list1[0] = "HP" # replacing the first element in the list with the new value 
 print(list1[0])
 print(list1)
+print("")
 
 list2 = [-11, 2, 12]
+print(list2)
 print(min(list2)) # returns the smallest element, value, in the list
 print(max(list2)) # returns the max value in the list
+
 print("")
 list1 = ["Cisco", "Juniper", "Avaya", 10, 10.5, -11]
 print(list1)
@@ -19,3 +22,21 @@ list1.append("HP") # add element in the list
 print(list1)
 del list1[0] # deletes an element in the list
 print(list1)
+print(list1.pop(0)) # removing an element with pop, no matter is printing, list is modify
+print(list1)
+print(list1.remove("Avaya")) # removing an element in the list by value not by index
+print(list1)
+list1.insert(2, "Blaaa")
+list1.insert(2, "Blaaa") # insterting an element at a particular index
+print(list1)
+list1.extend(list2) # appending a list to another list
+list2.extend(list1)
+print(list1)
+print(list2)
+print(list1.index(-11)) # returns the index of element -11
+print(list1.count("Blaaa")) # returns the number of times element "Blaaa" is in the list
+
+print("")
+list3 = [9, 99, 999, 1, 25, 500]
+list3.sort() # sorts the elements in ascending order by default and modifies the list
+print(list3)
