@@ -25,3 +25,10 @@ print(min(nr2,nr3,nr1)) # afiseaza valoarea minima
 print(pow(nr2,nr3,nr1)) # daca e cu doua argumente e echivalent cu nr ** nr(la putere), dar cu 3 argumente inseamna (nr2 ** nr3) % nr1 (modulo)
 print((1 == 1) and (2 == 2)) # ambele sunt adevarate deci e true
 print((1 == 1) or (2 == 2)) # ori una ori alta true inseamna ca e true
+print(not(1 == 1)) # false ca nu e adevarat ca 1 nu este egal cu 1
+print(not(1 == 2)) # ftrue, pentru ca e adevarat ca 1 nu este egal cu 2
+print(bool(None))
+print(bool(0))
+print(bool(2))
+print(bool("Blabla"))
+print(bool(""))
