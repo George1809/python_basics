@@ -40,3 +40,30 @@ print("")
 list3 = [9, 99, 999, 1, 25, 500]
 list3.sort() # sorts the elements in ascending order by default and modifies the list
 print(list3)
+list3.reverse() # sorts the elements in descending order by default and modifies the list
+print(list3)
+print(sorted(list3)) # sorts ascending but not modify
+print(sorted(list3, reverse=True)) # sorts descending and print but not modifies
+print(sorted(list3, reverse=False)) # sorts ascending and print but not modifies
+print(list3)
+
+print("")
+print(list1)
+print(list2)
+lists_concat = list1+list3 # concatenare 2 liste
+print(lists_concat)
+print(list1)
+print(list1 * 3) # repetition of a list * x
+
+print("")
+print("Lists slicing")
+print(list1)
+print(list1[1:3]) # print from index 1 to 3 but execept 3, only 1 and 2
+print(list1[3:]) # prints list starting from index 3
+print(list1[-1]) # prints last element
+print(list1[-2]) # prints lsecond to last element in the list
+print(list1[-9:-1]) # a certain sublist using negative indexes
+print(list1[:-5]) # returns the list without the last 5 elements in the list
+print(list1[::2]) # element with steps and skips every second element of the list
+print(list1[::-1]) # returns list in reverse order
+print(-11 in list1) # returns True if -11 is in the list
