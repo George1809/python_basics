@@ -69,7 +69,7 @@ my_new_file.close
 
 print("------------------------------------------------------------------------------------------------------------")
 
-newfile = open("newfile.txt", "w+") #opens a file for both writing and reading at the same time, but "w+ truncate the file and star over"
+newfile = open("/workspace/files/newfile.txt", "w+") #opens a file for both writing and reading at the same time, but "w+ truncate the file and star over"
 newfile.writelines(["Prima linie\n", "Linia 2"])
 newfile.seek(0)
 print(newfile.read())
@@ -78,13 +78,13 @@ newfile.close
 print("------------------------------------------------------------------------------------------------------------")
 
 
-with open("newfile.txt", "r") as f: #using the with-as solution, the files gets closed automatically, without needing the close() method
+with open("/workspace/files/newfile.txt", "r") as f: #using the with-as solution, the files gets closed automatically, without needing the close() method
     print(f.read())
 
 
 #Truncating files - the file should be open for reading AND writing, not just reading!
-# f = open("newfile.txt", "r+")
+# f = open("/workspace/files/newfile.txt", "r+")
 # f.truncate() #this deletes all the content inside the file
 #Truncating files - the file should be open for reading AND writing, not just reading!
-#f = open("D:\\test.txt", "r+")
+#f = open("/workspace/files/", "r+")
 #f.truncate(1) #this will keep the first 10 characters in the file and delete the rest
