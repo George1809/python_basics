@@ -46,3 +46,9 @@ set()
 # hex() # converting to a hexadecimal representation
 # int(variable, 2) # converting from binary back to decimal
 # int(variable, 16) # converting from hexadecimal back to decimal
+
+key = "bla bla"
+
+dict10 = {1: "Test", 2: key}
+
+print(dict10)

@@ -48,5 +48,23 @@ print("----------------------------------------------------------")
 
 # lambda arg1, arg2, ..., arg n: an expression using the arguments #general syntax
 a = lambda x, y: x * y # defining a lambda function
-b = a(20,10)
+b = a(10,10)
 print(b)
+
+
+def myfunc(list):
+    prod_list = []
+    for x in range(10):
+        for y in range(5):
+            product = x * y
+            prod_list.append(product)
+    return prod_list + list        
+
+rez = myfunc([2])
+print(rez)
+
+
+#...we can use a lambda function, a list comprehension and concatenation on a single line of code
+x = lambda list: [x * y for x in range(10) for y in range(5)] + list
+y = x([3])
+print(y)

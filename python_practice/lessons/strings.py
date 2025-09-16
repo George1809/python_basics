@@ -6,6 +6,7 @@ print(f'{un_sir.find("re")} - gasim grupul de caractere intr-un string')
 print(un_sir[1]) # afisam careacterul din string in functie de index
 print(un_sir.lower()) # afisam totul cu litere mici
 print(un_sir.upper()) # afisam totul cu litere mari
+print(un_sir.swapcase()) # invert case, lower to upper and upper to lower
 print(un_sir.startswith("U")) # verificam daca un string incepe cu un anumit caracter
 print(un_sir.endswith("e")) # verificam daca un string se termina cu un anumit caracter
 print(un_sir.strip(" ")) # strip() elimina spatii sau caractere doar la inceput si de la final de sir
