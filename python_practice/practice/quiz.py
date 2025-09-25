@@ -47,7 +47,7 @@ for a in quiz_list:
         answers.append(None)
 
 
-print(answers)
+print("Raspunsurile tale au fost:", *answers, sep=", ")
 
 final_answers = []
 for ans, r in zip(answers,right_answer):
@@ -55,7 +55,7 @@ for ans, r in zip(answers,right_answer):
         #print(ans,right_answer[r])
         final_answers.append(ans)
 
-print(final_answers)
+print("Raspunsurile corecte sunt:",*final_answers, sep=", ")
 print("Ai raspuns corect la",len(final_answers), "intrebari din 3")
 
 
