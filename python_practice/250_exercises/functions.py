@@ -162,3 +162,145 @@ def my_func(x, y=10):
 
 result = my_func(5)
 print(result)
+
+
+'''
+Exercise 182 - Functions
+Implement a function called my_func() that takes a single positional parameter x and two default parameters y and z which are equal to 100 and 200 respectively, 
+and adds them together, also returning the result when the function is called.'''
+
+print("----------------")
+
+def my_func(x, y=100, z=200):
+    return y+z+x
+
+result = my_func(50)
+print(result)
+
+
+'''Exercise 183 - Functions
+Implement a function called my_func() that takes two default parameters x (a list) and y (an integer), and returns the element in x positioned at index y, 
+also printing the result to the screen when called.'''
+
+print("----------------")
+
+
+def my_func(*args, y):
+    
+    first = args
+    return first[y]
+
+
+result = my_func(5, 6,7,7,8,list(range(2,25,2)), y=5)
+print(result) #result should be 10
+
+
+'''Exercise 184 - Functions
+Implement a function called my_func() that takes a positional parameter x and a variable-length tuple of parameters and returns the result of multiplying x 
+with the second element in the tuple, also returning the result when the function is called.
+
+'''
+
+print("----------------")
+
+def my_func(x, * args):
+
+    second = args
+    return x * second[1]
+
+result = my_func(5, 10, 20, 30, 50)
+print(result)
+
+'''Exercise 185 - Functions
+Implement a function called my_func() that takes a positional parameter x and a variable-length dictionary of (keyword) parameters and returns the result of 
+multiplying x with the largest value in the dictionary, also returning the result when the function is called.
+
+'''
+
+
+print("----------------")
+
+def my_func(x, **kwargs):
+
+    return x * max(kwargs.values())
+
+
+result = my_func(10, val1 = 10, val2 = 15, val3 = 20, val4 = 25, val5 = 30)
+print(result)
+
+
+'''Exercise 186 - Functions
+Add the correct line(s) of code inside the function in order to get 200 as a result of calling my_func() and have the result printed out to the screen.'''
+
+print("----------------")
+
+
+var = 10
+
+def my_func(x):
+    
+    print(x * var)
+	
+my_func(20)
+
+
+'''Exercise 187 - Functions
+Add the correct line(s) of code inside the function in order to get 100 as a result of calling my_func() and have the result printed out to the screen.'''
+
+print("----------------")
+
+var = 10
+
+def my_func(x):
+
+    #global var
+    var = 5
+    print(x * var)
+	
+my_func(20)
+print(var)
+
+'''Exercise 188 - Functions
+Make the necessary adjustment inside the function in order to get 120 as a result of calling my_func() and have the result printed out to the screen.'''
+
+print("----------------")
+
+
+def my_func(x):
+    var = 12
+    print(x * var)
+    
+	
+my_func(10)
+
+
+'''Exercise 189 - Functions
+Add the necessary line of code inside the function in order to get 80 as a result of calling my_func() and have the result printed out to the screen.'''
+
+print("----------------")
+
+var = 8
+
+def my_func(x):
+    global var
+    print(x * var)
+    var = 12
+	
+my_func(10)
+
+
+'''Exercise 190 - Functions
+Write code that will import only the pi variable from the math module and then it will format it in order to have only 4 digits after the floating point. 
+Of course, print out the result to the screen using the print() function.'''
+
+print("----------------")
+
+import math
+
+def my_func():
+    print(round(math.pi,4))
+
+
+my_func()
+
+print("%.4f" % math.pi)

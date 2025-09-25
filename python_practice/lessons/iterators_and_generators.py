@@ -25,6 +25,7 @@ my_object = my_gen(10, 5) #creating a generator object
 
 next(my_object) #manually yield the next element returned by the my_gen()function; raises StopIteration when the sequence is exhausted
 print("----------")
+print("----------")
 
 rez = next(my_object), 
 next(my_object), 
@@ -36,6 +37,7 @@ next(my_object),
 next(my_object),
 next(my_object)
 
+print("----------")
 print("----------")
 
 gen_exp = (x for x in range(5)) #creating a generator expression; similar to list comprehensions, but using parentheses instead of square brackets

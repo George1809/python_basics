@@ -52,3 +52,18 @@ key = "bla bla"
 dict10 = {1: "Test", 2: key}
 
 print(dict10)
+
+
+print("____________________________________\n")
+
+
+dict10 = {"r1":"value1",
+          "r2":"value2",
+          "r3":"value3"
+          }
+
+print(list(dict10))
+
+
+for i in dict10:
+    print(dict10[i])

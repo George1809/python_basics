@@ -119,11 +119,22 @@ for i in list3:
 
     print("Outside the nested loop")
 
-
+print("______________________________________")
 
 for i in range(10):
     pass 
     '''pass is the equivalent of "do nothing"; it is actually a placeholder 
     for when you just want to write a piece of code that you will treat later'''
 
+
+
+cv = 1
+test = input("introdu valoare:")
+
+while test != "a" and cv <= 5:
+    print("Nu e bine")
+    test = input("introdu valoare:")
+    cv += 1
+
+print("S-a terminat")
 
